@@ -66,7 +66,7 @@
             <li class="my-4 mx-1 md:my-0">
               <a href="#projects"
                 class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
-                Projects
+                Portfolio
               </a>
             </li>
             <li class="my-4 mx-1 md:my-0">
@@ -172,14 +172,16 @@
         </div>
         <div class="flex flex-col p-5 md:p-0 md:pl-16 md:w-[70%]">
           <div class="text-white sr02">
-            <div class="tab-titles">
-              <a class="tab-links active-link" onclick="openTab('bio')">Bio</a>
-              <p class="tab-links" onclick="openTab('skills')">Skills</p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
+            <div class="tab-titles justify-items-center items-center w-full md:flex md:w-auto md:order-1">
+              <a class="tab-links block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded active-link"
+                onclick="openTab('bio')">Bio</a>
+              <p class="tab-links block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                onclick="openTab('skills')">Skills</p>
+              <p class="tab-links block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                onclick="openTab('education')">Education</p>
             </div>
-
             <div class="tab-content active-tab" id="bio">
-              <p class="leading-7 text-sm">
+              <p class="leading-7 text-sm text-justify">
                 I am a self-motivated and hard-working individual with a passion for exploring and working with new
                 technologies. My primary focus is on mobile development, with a specialization in Flutter. I thrive on
                 creating innovative and user-friendly mobile applications that solve real-world problems.<br><br>
@@ -194,21 +196,28 @@
                 cutting-edge mobile applications that delight users and meet business objectives.
               </p>
             </div>
-            <div class="tab-content active-tab" id="skills">
+            <div class="tab-content leading-7 text-sm" id="skills">
               <ul>
-                <li><span>Flutter developer</span> <br> Build android and iOS apps</li>
+                <li><span>Dart</span></li>
+                <li><span>Flutter</span></li>
+                <li><span>Firebase</span></li>
               </ul>
               <ul>
-                <li><span></span>Firebase</span> <br> Build android and iOS apps</li>
+                <li><span>Familiar with</span> <br> React Native</li>
+                <li><span>Java</span></li>
+                <li><span>HTML</span></li>
+                <li><span>CSS</span></li>
               </ul>
             </div>
             <div class="tab-content" id="education">
-              <p class="leading-7 text-sm"> Bsc (Hons) In Computing And Information Systems
+              <p class="leading-7 text-sm"> Bsc (Hons) In Computing And Information Systems <br> Sabaragamuwa University
+                of Sri Lanka <br>
+                (2017 - 2022)
               </p>
             </div>
           </div>
           <div class="flex justify-start mt-5 sr04">
-            <button
+            <button id="contactMe"
               class="flex text-white border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base">
               Contact Me
             </button>
@@ -217,9 +226,6 @@
               Hire Now
             </button>
           </div>
-
-
-
         </div>
       </div>
     </div>
@@ -253,7 +259,7 @@
               class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center">
               Mobile app development
             </h4>
-            <p class="text-white text-sm text-center mt-4 mt:mb-8">
+            <p class="text-white text-sm text-justify mt-4 mt:mb-8">
               I specialize in developing high-performance, scalable, and secure mobile applications tailored to your
               specific business needs. Whether you need an app for iOS, Android, or both, I can deliver a seamless and
               intuitive user experience.
@@ -270,7 +276,7 @@
             <h4 class="text-[#647bff] md:text-lg font-medium text-center">
               Firebase Integration
             </h4>
-            <p class="text-white text-sm text-center mt-4 mt:mb-8">
+            <p class="text-white text-sm text-justify mt-4 mt:mb-8">
               Enhance your mobile applications with powerful and scalable backend services
               through Firebase integration. I offer comprehensive Firebase services that include
               real-time database integration, user authentication, cloud storage, and push notifications.
@@ -291,7 +297,7 @@
               class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center">
               Mobile App Deployment
             </h4>
-            <p class="text-white text-sm text-center mt-4 mt:mb-8">
+            <p class="text-white text-sm text-justify mt-4 mt:mb-8">
               Ensure your mobile applications reach your users with a smooth and efficient deployment process.
               I offer comprehensive app deployment services for both Android and iOS platforms.
               From preparing your app for release to navigating the complexities of app store guidelines,
@@ -315,141 +321,82 @@
         </span>
       </h2>
     </div>
-
-    <div class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-6xl w-full swiper pt-6 mx-auto">
-      <div class="slide-content overflow-hidden pb-14 mx-6 sr02">
-        <div class=" swiper-wrapper select-none">
-
-          <div class="swiper-slide">
-            <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-              <img class="h-56 rounded-lg w-full object-cover object-center"
-                src="https://source.unsplash.com/random/300x300/?1" alt="blog">
-              <div class="p-4 ">
-
-                <div class="flex items-center justify-between text-xs mb-4">
-                  <a class="text-white">
-                    08 September 2022
-                  </a>
-                  <span class="text-[#6747f6]">
-                    Tips & Tricks
-                  </span>
-                </div>
-
-                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                  Tip for Conduction Remote UX Research and Testing</h1>
-                <p class="mb-3 text-white text-xs text-center">
-                  Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                  tousled
-                  microdosing tousled waistcoat.
-                </p>
-                <div class="p-2 w-full">
-                  <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+    <!-- project 1 -->
+    <div class="max-w-7xl mt-4 relative mx-auto">
+      <div
+        class="max-w-xs md:max-w-[42rem] lg:max-w-[62rem] mx-auto grid grid-cols-1 pt-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+        <div class="relative project transition ease-in duration-300 rounded p-0 lg:p-0 sr02">
+          <img src="assets/img/project/news4u.png" class="w-full h-150 object-cover hover scalable">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-end justify-center text-center text-white p-4 project-overlay">
+            <div class="p-4 ">
+              <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                News4U - News App</h1>
+              <p class="mb-3 text-white text-xs text-justify">
+                A sleek and user-friendly news app that delivers the latest headlines and in-depth articles from
+                multiple sources in real-time. The app features personalized news feeds, push notifications for
+                breaking news, and a seamless reading experience with adjustable text sizes and dark mode. Users can
+                save articles for offline reading and share their favorite stories on social media platforms. The app
+                integrates with various APIs to ensure a diverse and up-to-date news collection.
+              </p>
+              <div class="p-2 w-full">
+                <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                     relative overflow-hidden z-10">
-                    Button
-                  </button>
-                </div>
+                  View on github
+                </button>
               </div>
             </div>
           </div>
-
-          <div class="swiper-slide">
-            <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-              <img class="h-56 rounded-lg w-full object-cover object-center"
-                src="https://source.unsplash.com/random/300x300/?2" alt="blog">
-              <div class="p-4 ">
-
-                <div class="flex items-center justify-between text-xs mb-4">
-                  <a class="text-white">
-                    08 September 2022
-                  </a>
-                  <span class="text-[#6747f6]">
-                    Tips & Tricks
-                  </span>
-                </div>
-
-                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                  Tip for Conduction Remote UX Research and Testing</h1>
-                <p class="mb-3 text-white text-xs text-center">
-                  Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                  tousled
-                  microdosing tousled waistcoat.
-                </p>
-                <div class="p-2 w-full">
-                  <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+        </div>
+        <!-- project 2 -->
+        <div class="relative project transition ease-in duration-300 rounded p-0 lg:p-0 sr02">
+          <img src="assets/img/project/news4u.png" alt="Project 2" class="w-full h-150 object-cover">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center text-center text-white p-4 project-overlay">
+            <div class="p-4 ">
+              <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                News4U - News App</h1>
+              <p class="mb-3 text-white text-xs text-justify">
+                A sleek and user-friendly news app that delivers the latest headlines and in-depth articles from
+                multiple sources in real-time. The app features personalized news feeds, push notifications for
+                breaking news, and a seamless reading experience with adjustable text sizes and dark mode. Users can
+                save articles for offline reading and share their favorite stories on social media platforms. The
+                app integrates with various APIs to ensure a diverse and up-to-date news collection.
+              </p>
+              <div class="p-2 w-full">
+                <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                     relative overflow-hidden z-10">
-                    Button
-                  </button>
-                </div>
+                  View on github
+                </button>
               </div>
             </div>
           </div>
-
-          <div class="swiper-slide">
-            <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-              <img class="h-56 rounded-lg w-full object-cover object-center"
-                src="https://source.unsplash.com/random/300x300/?3" alt="blog">
-              <div class="p-4 ">
-
-                <div class="flex items-center justify-between text-xs mb-4">
-                  <a class="text-white">
-                    08 September 2022
-                  </a>
-                  <span class="text-[#6747f6]">
-                    Tips & Tricks
-                  </span>
-                </div>
-
-                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                  Tip for Conduction Remote UX Research and Testing</h1>
-                <p class="mb-3 text-white text-xs text-center">
-                  Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                  tousled
-                  microdosing tousled waistcoat.
-                </p>
-                <div class="p-2 w-full">
-                  <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
+        </div>
+        <!-- project 3 -->
+        <div class="relative project transition ease-in duration-300 rounded p-0 lg:p-0 sr02">
+          <img src="assets/img/project/news4u.png" alt="Project 2" class="w-full h-150 object-cover">
+          <div
+            class="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center text-center text-white p-4 project-overlay">
+            <div class="p-4 ">
+              <h1 class="title-font text-base font-semibold text-white text-center mb-4">
+                News4U - News App</h1>
+              <p class="mb-3 text-white text-xs text-justify">
+                A sleek and user-friendly news app that delivers the latest headlines and in-depth articles from
+                multiple sources in real-time. The app features personalized news feeds, push notifications for
+                breaking news, and a seamless reading experience with adjustable text sizes and dark mode. Users can
+                save articles for offline reading and share their favorite stories on social media platforms. The
+                app integrates with various APIs to ensure a diverse and up-to-date news collection.
+              </p>
+              <div class="p-2 w-full">
+                <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
                                     relative overflow-hidden z-10">
-                    Button
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-              <img class="h-56 rounded-lg w-full object-cover object-center"
-                src="https://source.unsplash.com/random/300x300/?4" alt="blog">
-              <div class="p-4 ">
-
-                <div class="flex items-center justify-between text-xs mb-4">
-                  <a class="text-white">
-                    08 September 2022
-                  </a>
-                  <span class="text-[#6747f6]">
-                    Tips & Tricks
-                  </span>
-                </div>
-
-                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                  Tip for Conduction Remote UX Research and Testing</h1>
-                <p class="mb-3 text-white text-xs text-center">
-                  Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                  tousled
-                  microdosing tousled waistcoat.
-                </p>
-                <div class="p-2 w-full">
-                  <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
-                                    relative overflow-hidden z-10">
-                    Button
-                  </button>
-                </div>
+                  View on github
+                </button>
               </div>
             </div>
           </div>
 
         </div>
-        <div class="swiper-pagination sr03"></div>
       </div>
     </div>
   </section>

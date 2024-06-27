@@ -164,3 +164,18 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
         event.currentTarget.classList.add('active-link');
         document.getElementById(tabName).classList.add('active-tab');
     }
+
+    document.getElementById('contactMe').addEventListener('click', function() {
+        // Replace '1234567890' with the target phone number (with country code, without '+' sign)
+        var phoneNumber = '+94710380434';
+        var message = 'Hello! I am interested in hiring you. Please let me know the details.';
+  
+        // Encode the message to ensure it works correctly in the URL
+        var encodedMessage = encodeURIComponent(message);
+  
+        // Create the WhatsApp URL
+        var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+
+        // Open the WhatsApp URL
+        window.open(whatsappUrl, '_blank');
+      });
