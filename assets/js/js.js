@@ -179,3 +179,11 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
         // Open the WhatsApp URL
         window.open(whatsappUrl, '_blank');
       });
+
+      function openLink(url) {
+        window.open(url, '_blank');
+    }
+
+    function scrollToContact() {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
