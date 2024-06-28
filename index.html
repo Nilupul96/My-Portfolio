@@ -116,7 +116,7 @@
 
     <!--::::::::::::::::::-hero section-::::::::::::::::::-->
     <section
-      class="lg:bg-[url('./assets/img/bg.png')] bg-[#090a1a] relative mx-auto bg-center pt-20 lg:pt-36 overflow-hidden"
+      class="lg:bg-[url('./assets/img/bg.png')] bg-[#090a1a] relative mx-auto bg-cover pt-20 lg:pt-36 overflow-hidden"
       id="home"
     >
       <div
@@ -156,26 +156,22 @@
         <div class="lg:block hidden absolute">
           <span class="absolute opacity-10 -top-36 scene" id="scene">
             <h1
-              class="text-white font-bold uppercase text-[18rem]"
+              class="auto-type text-white font-bold text-[14rem] molle-regular-italic"
               data-depth="0.40"
             >
               Hello
             </h1>
           </span>
-          <span class="absolute w-8 left-56 top-32 scene2" id="scene2">
-           
-          </span>
+          <span class="absolute w-8 left-56 top-32 scene2" id="scene2"> </span>
           <span
             class="absolute w-8 left-[72rem] top-[10rem] scene2"
             id="scene3"
           >
-           
           </span>
           <span
             class="absolute w-8 left-[40rem] top-[14rem] scene2"
             id="scene4"
           >
-           
           </span>
         </div>
 
@@ -256,18 +252,18 @@
                   onclick="openTab('bio')"
                   >Bio</a
                 >
-                <p
+                <a
                   class="tab-links block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
                   onclick="openTab('skills')"
                 >
                   Skills
-                </p>
-                <p
+                </a>
+                <a
                   class="tab-links block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
                   onclick="openTab('education')"
                 >
                   Education
-                </p>
+                </a>
               </div>
               <div class="tab-content active-tab" id="bio">
                 <p class="leading-7 text-sm text-justify">
@@ -291,20 +287,14 @@
                 </p>
               </div>
               <div class="tab-content leading-7 text-sm" id="skills">
-                <ul>
-                  <li><span>Dart</span></li>
+                <ul class="list-disc ml-4">
                   <li><span>Flutter</span></li>
+                  <li><span>Dart</span></li>
                   <li><span>Firebase</span></li>
-                </ul>
-                <ul>
-                  <li>
-                    <span>Familiar with</span> <br />
-                    React Native
-                  </li>
                   <li><span>Java</span></li>
-                  <li><span>HTML</span></li>
-                  <li><span>CSS</span></li>
                 </ul>
+                <br />
+            
               </div>
               <div class="tab-content" id="education">
                 <p class="leading-7 text-sm">
@@ -547,44 +537,6 @@
             </div>
           </div>
           <!-- project 3 -->
-          <div
-            class="relative project transition ease-in duration-300 rounded p-0 lg:p-0 sr02"
-          >
-            <img
-              src="assets/img/project/news4u.png"
-              alt="Project 2"
-              class="w-full h-150 object-cover"
-            />
-            <div
-              class="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center text-center text-white p-4 project-overlay"
-            >
-              <div class="p-4">
-                <h1
-                  class="title-font text-base font-semibold text-white text-center mb-4"
-                >
-                  News4U - News App
-                </h1>
-                <p class="mb-3 text-white text-xs text-justify">
-                  A sleek and user-friendly news app that delivers the latest
-                  headlines and in-depth articles from multiple sources in
-                  real-time. The app features personalized news feeds, push
-                  notifications for breaking news, and a seamless reading
-                  experience with adjustable text sizes and dark mode. Users can
-                  save articles for offline reading and share their favorite
-                  stories on social media platforms. The app integrates with
-                  various APIs to ensure a diverse and up-to-date news
-                  collection.
-                </p>
-                <div class="p-2 w-full">
-                  <button
-                    class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base relative overflow-hidden z-10"
-                  >
-                    View on github
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -652,17 +604,24 @@
                 ></textarea>
               </div>
             </div>
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
             <div class="p-2 w-full sr05">
               <button
-              type="submit"
+                type="submit"
                 class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-10 focus:outline-none rounded-lg text-lg relative overflow-hidden z-10"
               >
                 Submit
               </button>
             </div>
-            <div 
-            class="title-font text-base font-semibold text-white text-center mb-4" id="result"></div>
+            <div
+              class="title-font text-base font-semibold text-white text-center mb-4"
+              id="result"
+            ></div>
           </div>
         </form>
       </div>
@@ -672,6 +631,7 @@
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!---slider js--->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!---main js--->
     <script src="assets/js/js.js"></script>
   </body>

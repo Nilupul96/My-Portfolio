@@ -227,3 +227,7 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
                   }, 3000);
               });
       });
+
+      var typed= new Typed(".auto-type",{
+        "strings":["Hello","Welcome"], typeSpeed:250, backSpeed:250, smartBackspace: true,showCursor:false, loop: true,backDelay: 10
+      })
