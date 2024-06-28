@@ -187,3 +187,81 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
     function scrollToContact() {
         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
     }
+    function submitForm() {
+        // Get the form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        // Validate form data
+        if (!name || !email || !message) {
+            alert('Please fill out all fields.');
+            return;
+        }
+
+        // Create the data object
+        const formData = {
+            name: name,
+            email: email,
+            message: message
+        };
+
+        // Display the form data (for demonstration purposes)
+        alert(`Form submitted:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+
+        // In a real-world scenario, you would send the formData to a server
+        // Example:
+        // fetch('your-server-endpoint', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        //     body: JSON.stringify(formData)
+        // })
+        // .then(response => response.json())
+        // .then(data => {
+        //     console.log('Success:', data);
+        // })
+        // .catch(error => {
+        //     console.error('Error:', error);
+        // });
+    }
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function(e) {
+    
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        result.innerHTML = "Please wait..."
+        console.log(json);
+          fetch('https://api.web3forms.com/submit', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                      'Accept': 'application/json'
+                  },
+                  body: json
+              })
+              .then(async (response) => {
+                  let json = await response.json();
+                  if (response.status == 200) {
+                      result.innerHTML = "Form submitted successfully!";  
+                  } else {
+                      console.log(response);
+                      result.innerHTML = json.message;
+                  }
+              })
+              .catch(error => {
+                  console.log(error);
+                  result.innerHTML = "Something went wrong!";
+              })
+              .then(function() {
+                  form.reset();
+                  setTimeout(() => {
+                      result.style.display = "none";
+                  }, 3000);
+              });
+      });
