@@ -164,7 +164,6 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
         event.currentTarget.classList.add('active-link');
         document.getElementById(tabName).classList.add('active-tab');
     }
-
     document.getElementById('contactMe').addEventListener('click', function() {
         // Replace '1234567890' with the target phone number (with country code, without '+' sign)
         var phoneNumber = '+94710380434';
@@ -187,45 +186,7 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
     function scrollToContact() {
         document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
     }
-    function submitForm() {
-        // Get the form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
 
-        // Validate form data
-        if (!name || !email || !message) {
-            alert('Please fill out all fields.');
-            return;
-        }
-
-        // Create the data object
-        const formData = {
-            name: name,
-            email: email,
-            message: message
-        };
-
-        // Display the form data (for demonstration purposes)
-        alert(`Form submitted:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
-
-        // In a real-world scenario, you would send the formData to a server
-        // Example:
-        // fetch('your-server-endpoint', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(formData)
-        // })
-        // .then(response => response.json())
-        // .then(data => {
-        //     console.log('Success:', data);
-        // })
-        // .catch(error => {
-        //     console.error('Error:', error);
-        // });
-    }
     const form = document.getElementById('form');
     const result = document.getElementById('result');
 
@@ -248,7 +209,8 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
               .then(async (response) => {
                   let json = await response.json();
                   if (response.status == 200) {
-                      result.innerHTML = "Form submitted successfully!";  
+                      result.innerHTML = "Form submitted successfully!";
+  
                   } else {
                       console.log(response);
                       result.innerHTML = json.message;
