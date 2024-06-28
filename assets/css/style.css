@@ -122,25 +122,47 @@
     margin: 20px 0px 20px;
   }
   .tab-links {
-    margin-right: 50px;
+    margin-right: 0px;
     cursor: pointer;
     transition: all 0.5s ease;
-
     position: relative;
   }
  .tab-links::after {
-    content: "";
+    /* content: "";
     height: 3px; 
     width: 0;
     transition: 0.5s;
     position: absolute;
     left: 0px;
-    bottom: -6px;
+    bottom: -6px; */
   }
   .tab-links.active-link::after {
+    margin-right: 50px;
     width: 100%;
+    background-color: rgba(100, 123, 255, 0.161);
+    color: #647bff !important;
   }
-  
- 
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active-tab {
+    display: block;
+  }
+  .project-overlay {
+    opacity: 0;
+    transform: translateY(100%);
+
+    transition: opacity 800ms ease, transform 1s ease;
+}
+.project:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+.project img {
+  transition: transform 1s ease;
+}
+.project:hover img {
+  transform: scale(1);
+}
  
 }

@@ -1,512 +1,678 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nilupul Isurujith Portfolio</title>
+    <!--icon-->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!--slider-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css"
+    />
+    <!--tailwind.css-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--main CSS-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--parallax-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nilupul Isurujith Portfolio</title>
-  <!--icon-->
-  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <!--slider-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css" />
-  <!--tailwind.css-->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!--main CSS-->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <!--parallax-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-</head>
-
-<body>
-  <!--:::::::::::::::::::::-Header-::::::::::::::::::::-->
-  <header class="w-full fixed top-0 left-0 bg-[#090a1a] z-[999] flex justify-between items-center h-16 lg:px-0 px-4">
-    <!-- <a class="text-white block md:hidden" href="#" id="menuOpen">
+  <body>
+    <!--:::::::::::::::::::::-Header-::::::::::::::::::::-->
+    <header
+      class="w-full fixed top-0 left-0 bg-[#090a1a] z-[999] flex justify-between items-center h-16 lg:px-0 px-4"
+    >
+      <!-- <a class="text-white block md:hidden" href="#" id="menuOpen">
             <img src="assets/img/ac.png" class="h-7 sm:h-9" alt="logo" />
         </a> -->
-    <!--open button-->
-    <button class="text-white cursor-pointer block md:hidden" id="nav-toggle">
-      <i class="fi fi-rr-apps"></i>
-    </button>
+      <!--open button-->
+      <button class="text-white cursor-pointer block md:hidden" id="nav-toggle">
+        <i class="fi fi-rr-apps"></i>
+      </button>
 
-    <nav
-      class="w-full visible fixed lg:px-0 md:left-0 left-[-100%] md:block top-0 bg-[#090a1a] lg:bg-transparent md:h-auto md:py-0 h-screen py-5 px-2 z-[100]"
-      id="nav-menu">
-      <div
-        class="menu_Slider max-w-5xl md:h-auto md:flex md:flex-wrap md:justify-between md:items-center md:mx-auto mx-6 grid gap-8 md:gap-0 lg:gap8 h-full">
-        <!--close button-->
-        <button class="text-white text-xl block absolute right-6 p-1 cursor-pointer md:hidden" id="menu_hide_btn">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="flex md:order-2 order-1">
-          <button type="button"
-            class="text-white h-fit bg-[#647bff] hover:text-[#647bff] relative overflow-hidden z-10 btn__hover focus:outline-none font-medium rounded-lg text-sm px-8 py-3 text-center mr-3 md:mr-0">
-            Hire Me
-          </button>
-        </div>
-        <div class="nav__menu justify-between items-center w-full md:flex md:w-auto md:order-1">
-          <ul class="flex flex-col p-4 mt-4 md:flex-row md:mt-0 md:text-base md:font-medium">
-            <li class="my-4 mx-1 md:my-0">
-              <a href="#home"
-                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
-                Home
-              </a>
-            </li>
-            <li class="my-4 mx-1 md:my-0">
-              <a href="#about"
-                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">About</a>
-            </li>
-            <li class="my-4 mx-1 md:my-0">
-              <a href="#services"
-                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
-                Services
-              </a>
-            </li>
-            <li class="my-4 mx-1 md:my-0">
-              <a href="#projects"
-                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
-                Projects
-              </a>
-            </li>
-            <li class="my-4 mx-1 md:my-0">
-              <a href="#contact"
-                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!--::::::::::::::::::-hero section-::::::::::::::::::-->
-  <section
-    class="lg:bg-[url('./assets/img/bg.png')] bg-[#090a1a] relative mx-auto bg-center pt-20 lg:pt-36 overflow-hidden"
-    id="home">
-    <div class="max-w-7xl relative flex justify-center mx-auto flex-col-reverse lg:flex-row lg:justify-between">
-      <div class="flex flex-col mt-8 justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-        <h1 class="text-2xl font-normal leading-none lg:text-5xl text-white sr01">
-          I'M
-          <br />
-
-          <span class="font-semibold">Nilupul Isurujith </span>
-        </h1>
-        <span class="mt-3 lg:mx-0 mx-auto w-24 h-[3px] bg-gray-200 rounded sr02"></span>
-        <p class="mt-2 mb-0 lg:mb-8 text-base md:text-lg text-white sr02">
-          Professional flutter developer With 3 Years of
-          <br class="hidden md:inline lg:hidden" />
-          Work Experience
-        </p>
-        <div class="flex justify-center space-y-4 flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-          <a onclick="window.open('/assets/cv/Nilupul Isurujith CV.pdf')"
-            class="flex my-8 lg:my-0 items-center lg:text-lg text-white md:px-8 md:py-4 px-4 py-3 text-sm font-normal rounded bg-[#647bff] hover:bg-[#fff] hover:text-[#647bff] sr03">
-            <i class="fa-solid fa-cloud-arrow-down flex mr-2"></i>Download CV
-          </a>
-        </div>
-      </div>
-
-      <div class="lg:block hidden absolute">
-        <span class="absolute opacity-10 -top-36 scene" id="scene">
-          <h1 class="text-white font-bold uppercase text-[18rem]" data-depth="0.40">
-            Hello
-          </h1>
-        </span>
-        <span class="absolute w-8 left-56 top-32 scene2" id="scene2">
-          <img src="assets/img/Ellipse 1.png" alt="" data-depth="2.5" />
-        </span>
-        <span class="absolute w-8 left-[72rem] top-[10rem] scene2" id="scene3">
-          <img src="assets/img/Vector 1.png" alt="" data-depth="1.9" />
-        </span>
-        <span class="absolute w-8 left-[40rem] top-[14rem] scene2" id="scene4">
-          <img src="assets/img/Rectangle 1.png" alt="" data-depth="2" />
-        </span>
-      </div>
-
-      <div
-        class="flex items-center relative z-10 justify-center mt-0 mr-0 lg:mr-6 lg:mt-8 h-72 sm:h-80 lg:h-[42rem] xl:h-112 2xl:h-128">
-        <img src="assets/img/hero.png" alt=""
-          class="object-contain h-72 sm:h-80 lg:h-[42rem] xl:h-112 2xl:h-128 sr03" />
-      </div>
-      <div
-        class="absolute flex left-0 right-0 top-auto lg:top-0 lg:left-auto lg:-right-32 bottom-0 justify-center items-center gap-4 lg:rotate-90">
-        <span class="text-white text-sm font-semibold tracking-widest w-max">
-          Follow me
-        </span>
-        <span class="w-12 h-[3px] bg-[#647bff] rounded"></span>
-
-        <div class="flex gap-4">
-
-          <a href="https://github.com/Nilupul96" class="text-white hover:text-[#647bff] transition duration-100">
-            <i class="fa-brands fa-github"></i>
-          </a>
-
-          <a href="https://www.linkedin.com/in/nilupul-isurujith/"
-            class="text-white hover:text-[#647bff] transition duration-100">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--::::::::::::::::::-About section-:::::::::::::::::-->
-  <section class="bg-[#090a1a] p-6 mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28" id="about">
-    <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
-      <h2 class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
-        About
-        <span class="text-[#647bff]">US</span>
-        <span
-          class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
-          About
-        </span>
-      </h2>
-    </div>
-
-    <div class="max-w-7xl mt-4 relative mx-auto">
-      <div class="flex w-full flex-col md:flex-row sm:justify-center items-center">
+      <nav
+        class="w-full visible fixed lg:px-0 md:left-0 left-[-100%] md:block top-0 bg-[#090a1a] lg:bg-transparent md:h-auto md:py-0 h-screen py-5 px-2 z-[100]"
+        id="nav-menu"
+      >
         <div
-          class="w-[250px] md:w-[300px] flex justify-center items-center relative before:hidden before:md:block before:absolute md:before:w-[300px] md:before:h-[265px] before:border-dashed before:border-2 before:border-[#647bff] md:before:-left-7 md:before:top-7 before:rounded-[20px] before:z-[10]">
-          <img class="rounded-xl object-cover z-20" src="assets/img/about_me.jpg" />
-        </div>
-        <div class="flex flex-col p-5 md:p-0 md:pl-16 md:w-[70%]">
-          <div class="text-white sr02">
-            <div class="tab-titles">
-              <a class="tab-links active-link" onclick="openTab('bio')">Bio</a>
-              <p class="tab-links" onclick="openTab('skills')">Skills</p>
-              <p class="tab-links" onclick="openTab('education')">Education</p>
-            </div>
-
-            <div class="tab-content active-tab" id="bio">
-              <p class="leading-7 text-sm">
-                I am a self-motivated and hard-working individual with a passion for exploring and working with new
-                technologies. My primary focus is on mobile development, with a specialization in Flutter. I thrive on
-                creating innovative and user-friendly mobile applications that solve real-world problems.<br><br>
-                With a strong foundation in Flutter, I bring a keen eye for detail and a commitment to delivering
-                high-quality, performant, and scalable mobile solutions. My enthusiasm for mobile development drives me
-                to
-                continuously learn and stay updated with the latest trends and advancements in the field.<br><br>
-
-                I am excited about the opportunity to bring my skills, creativity, and passion for mobile development to
-                a
-                dynamic team. I look forward to collaborating with like-minded professionals to build impactful and
-                cutting-edge mobile applications that delight users and meet business objectives.
-              </p>
-            </div>
-            <div class="tab-content active-tab" id="skills">
-              <ul>
-                <li><span>Flutter developer</span> <br> Build android and iOS apps</li>
-              </ul>
-              <ul>
-                <li><span></span>Firebase</span> <br> Build android and iOS apps</li>
-              </ul>
-            </div>
-            <div class="tab-content" id="education">
-              <p class="leading-7 text-sm"> Bsc (Hons) In Computing And Information Systems
-              </p>
-            </div>
-          </div>
-          <div class="flex justify-start mt-5 sr04">
-            <button
-              class="flex text-white border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base">
-              Contact Me
-            </button>
-            <button
-              class="ml-3 md:ml-8 flex text-white bg-[#647bff] border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base">
-              Hire Now
-            </button>
-          </div>
-
-
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--:::::::::::::::::-Services section-::::::::::::::::-->
-  <section class="bg-[#090a1a] p-6 mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="services">
-    <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
-      <h2 class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
-        My
-        <span class="text-[#647bff]">Services</span>
-        <span
-          class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
-          Services
-        </span>
-      </h2>
-    </div>
-
-    <div class="max-w-7xl mt-4 relative mx-auto">
-      <div
-        class="max-w-xs md:max-w-[42rem] lg:max-w-[62rem] mx-auto grid grid-cols-1 pt-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-        <div
-          class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-300 rounded-lg p-4 lg:p-8 sr02">
-          <div
-            class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8">
-            <img src="assets/img/icon/S_01.png" class="w-full h-full object-cover object-center p-5" />
-          </div>
-
-          <div>
-            <h4
-              class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center">
-              Mobile app development
-            </h4>
-            <p class="text-white text-sm text-center mt-4 mt:mb-8">
-              I specialize in developing high-performance, scalable, and secure mobile applications tailored to your
-              specific business needs. Whether you need an app for iOS, Android, or both, I can deliver a seamless and
-              intuitive user experience.
-            </p>
-          </div>
-        </div>
-        <div class="flex flex-col items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr03">
-          <div
-            class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8">
-            <img src="assets/img/icon/S_02.png" class="w-full h-full object-cover object-center p-5" />
-          </div>
-
-          <div>
-            <h4 class="text-[#647bff] md:text-lg font-medium text-center">
-              Firebase Integration
-            </h4>
-            <p class="text-white text-sm text-center mt-4 mt:mb-8">
-              Enhance your mobile applications with powerful and scalable backend services
-              through Firebase integration. I offer comprehensive Firebase services that include
-              real-time database integration, user authentication, cloud storage, and push notifications.
-              I ensure your app is equipped with reliable and efficient backend solutions, allowing you to focus on
-              delivering a seamless user experience.
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-300 rounded-lg p-4 lg:p-8 sr03">
-          <div
-            class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8">
-            <img src="assets/img/icon/S_03.png" class="w-full h-full object-cover object-center p-5" />
-          </div>
-
-          <div>
-            <h4
-              class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center">
-              Mobile App Deployment
-            </h4>
-            <p class="text-white text-sm text-center mt-4 mt:mb-8">
-              Ensure your mobile applications reach your users with a smooth and efficient deployment process.
-              I offer comprehensive app deployment services for both Android and iOS platforms.
-              From preparing your app for release to navigating the complexities of app store guidelines,
-              I handle every step to ensure a successful launch..
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--:::::::::::::::::-Projects section-::::::::::::::::-->
-  <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="projects">
-    <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
-      <h2 class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr06">
-        My
-        <span class="text-[#647bff]">Projects</span>
-        <span
-          class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
-          Projects
-        </span>
-      </h2>
-    </div>
-
-    <div class="max-w-sm sm:max-w-lg md:max-w-3xl lg:max-w-6xl w-full swiper pt-6 mx-auto">
-      <div class="slide-content overflow-hidden pb-14 mx-6 sr02">
-        <div class=" swiper-wrapper select-none">
-
-          <div class="swiper-slide">
-            <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-              <img class="h-56 rounded-lg w-full object-cover object-center"
-                src="https://source.unsplash.com/random/300x300/?1" alt="blog">
-              <div class="p-4 ">
-
-                <div class="flex items-center justify-between text-xs mb-4">
-                  <a class="text-white">
-                    08 September 2022
-                  </a>
-                  <span class="text-[#6747f6]">
-                    Tips & Tricks
-                  </span>
-                </div>
-
-                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                  Tip for Conduction Remote UX Research and Testing</h1>
-                <p class="mb-3 text-white text-xs text-center">
-                  Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                  tousled
-                  microdosing tousled waistcoat.
-                </p>
-                <div class="p-2 w-full">
-                  <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
-                                    relative overflow-hidden z-10">
-                    Button
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-              <img class="h-56 rounded-lg w-full object-cover object-center"
-                src="https://source.unsplash.com/random/300x300/?2" alt="blog">
-              <div class="p-4 ">
-
-                <div class="flex items-center justify-between text-xs mb-4">
-                  <a class="text-white">
-                    08 September 2022
-                  </a>
-                  <span class="text-[#6747f6]">
-                    Tips & Tricks
-                  </span>
-                </div>
-
-                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                  Tip for Conduction Remote UX Research and Testing</h1>
-                <p class="mb-3 text-white text-xs text-center">
-                  Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                  tousled
-                  microdosing tousled waistcoat.
-                </p>
-                <div class="p-2 w-full">
-                  <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
-                                    relative overflow-hidden z-10">
-                    Button
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-              <img class="h-56 rounded-lg w-full object-cover object-center"
-                src="https://source.unsplash.com/random/300x300/?3" alt="blog">
-              <div class="p-4 ">
-
-                <div class="flex items-center justify-between text-xs mb-4">
-                  <a class="text-white">
-                    08 September 2022
-                  </a>
-                  <span class="text-[#6747f6]">
-                    Tips & Tricks
-                  </span>
-                </div>
-
-                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                  Tip for Conduction Remote UX Research and Testing</h1>
-                <p class="mb-3 text-white text-xs text-center">
-                  Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                  tousled
-                  microdosing tousled waistcoat.
-                </p>
-                <div class="p-2 w-full">
-                  <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
-                                    relative overflow-hidden z-10">
-                    Button
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="h-full rounded-lg overflow-hidden bg-slate-800">
-              <img class="h-56 rounded-lg w-full object-cover object-center"
-                src="https://source.unsplash.com/random/300x300/?4" alt="blog">
-              <div class="p-4 ">
-
-                <div class="flex items-center justify-between text-xs mb-4">
-                  <a class="text-white">
-                    08 September 2022
-                  </a>
-                  <span class="text-[#6747f6]">
-                    Tips & Tricks
-                  </span>
-                </div>
-
-                <h1 class="title-font text-base font-semibold text-white text-center mb-4">
-                  Tip for Conduction Remote UX Research and Testing</h1>
-                <p class="mb-3 text-white text-xs text-center">
-                  Photo booth fam kinfolk coldpressed sriracha leggings jianbing microdosing
-                  tousled
-                  microdosing tousled waistcoat.
-                </p>
-                <div class="p-2 w-full">
-                  <button class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base
-                                    relative overflow-hidden z-10">
-                    Button
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-pagination sr03"></div>
-      </div>
-    </div>
-  </section>
-
-
-  <!--:::::::::::::::::-Contact section-::::::::::::::::-->
-  <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="contact">
-    <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
-      <h2 class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01">
-        Contact
-        <span class="text-[#647bff]">Me</span>
-        <span
-          class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
-          Contact
-        </span>
-      </h2>
-    </div>
-
-    <div class="max-w-md md:max-w-[50rem] px-4 sm:px-0 lg:w-1/2 md:w-2/3 mx-auto pt-10">
-      <div class="flex flex-wrap -m-2">
-        <div class="p-2 w-full sr02">
-          <div class="relative">
-            <input type="text" id="name" placeholder="Your Name*"
-              class="w-full bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500 outline-none text-white py-4 px-6 sm:py-5 sm:px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out" />
-          </div>
-        </div>
-        <div class="p-2 w-full sr03">
-          <div class="relative">
-            <input type="email" id="email" placeholder="Email Address*"
-              class="w-full bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500 outline-none text-white py-4 px-6 sm:py-5 sm:px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out" />
-          </div>
-        </div>
-        <div class="p-2 w-full sr04">
-          <div class="relative">
-            <textarea id="message" name="message"
-              class="w-full h-52 bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500 outline-none text-white py-5 px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out"></textarea>
-          </div>
-        </div>
-
-        <div class="p-2 w-full sr05">
+          class="menu_Slider max-w-5xl md:h-auto md:flex md:flex-wrap md:justify-between md:items-center md:mx-auto mx-6 grid gap-8 md:gap-0 lg:gap8 h-full"
+        >
+          <!--close button-->
           <button
-            class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-10 focus:outline-none rounded-lg text-lg relative overflow-hidden z-10">
-            Submit
+            class="text-white text-xl block absolute right-6 p-1 cursor-pointer md:hidden"
+            id="menu_hide_btn"
+          >
+            <i class="fa-solid fa-xmark"></i>
           </button>
+          <div class="flex md:order-2 order-1">
+            <button
+              type="button"
+              onclick="scrollToContact()"
+              class="text-white h-fit bg-[#647bff] hover:text-[#647bff] relative overflow-hidden z-10 btn__hover focus:outline-none font-medium rounded-lg text-sm px-8 py-3 text-center mr-3 md:mr-0"
+            >
+              Hire Me
+            </button>
+          </div>
+          <div
+            class="nav__menu justify-between items-center w-full md:flex md:w-auto md:order-1"
+          >
+            <ul
+              class="flex flex-col p-4 mt-4 md:flex-row md:mt-0 md:text-base md:font-medium"
+            >
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#home"
+                  class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                >
+                  Home
+                </a>
+              </li>
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#about"
+                  class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                  >About</a
+                >
+              </li>
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#services"
+                  class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                >
+                  Services
+                </a>
+              </li>
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#projects"
+                  class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                >
+                  Portfolio
+                </a>
+              </li>
+              <li class="my-4 mx-1 md:my-0">
+                <a
+                  href="#contact"
+                  class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--::::::::::::::::::-hero section-::::::::::::::::::-->
+    <section
+      class="lg:bg-[url('./assets/img/bg.png')] bg-[#090a1a] relative mx-auto bg-center pt-20 lg:pt-36 overflow-hidden"
+      id="home"
+    >
+      <div
+        class="max-w-7xl relative flex justify-center mx-auto flex-col-reverse lg:flex-row lg:justify-between"
+      >
+        <div
+          class="flex flex-col mt-8 justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
+        >
+          <h1
+            class="text-2xl font-normal leading-none lg:text-5xl text-white sr01"
+          >
+            I'M
+            <br />
+
+            <span class="font-semibold">Nilupul Isurujith </span>
+          </h1>
+          <span
+            class="mt-3 lg:mx-0 mx-auto w-24 h-[3px] bg-gray-200 rounded sr02"
+          ></span>
+          <p class="mt-2 mb-0 lg:mb-8 text-base md:text-lg text-white sr02">
+            Professional flutter developer With 3 Years of
+            <br class="hidden md:inline lg:hidden" />
+            Work Experience
+          </p>
+          <div
+            class="flex justify-center space-y-4 flex-row sm:space-y-0 sm:space-x-4 lg:justify-start"
+          >
+            <a
+              onclick="window.open('/assets/cv/Nilupul Isurujith CV.pdf')"
+              class="flex my-8 lg:my-0 items-center lg:text-lg text-white md:px-8 md:py-4 px-4 py-3 text-sm font-normal rounded bg-[#647bff] hover:bg-[#fff] hover:text-[#647bff] sr03 cursor-pointer"
+            >
+              <i class="fa-solid fa-cloud-arrow-down flex mr-2"></i>Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:block hidden absolute">
+          <span class="absolute opacity-10 -top-36 scene" id="scene">
+            <h1
+              class="text-white font-bold uppercase text-[18rem]"
+              data-depth="0.40"
+            >
+              Hello
+            </h1>
+          </span>
+          <span class="absolute w-8 left-56 top-32 scene2" id="scene2">
+           
+          </span>
+          <span
+            class="absolute w-8 left-[72rem] top-[10rem] scene2"
+            id="scene3"
+          >
+           
+          </span>
+          <span
+            class="absolute w-8 left-[40rem] top-[14rem] scene2"
+            id="scene4"
+          >
+           
+          </span>
+        </div>
+
+        <div
+          class="flex items-center relative z-10 justify-center mt-0 mr-0 lg:mr-6 lg:mt-8 h-72 sm:h-80 lg:h-[42rem] xl:h-112 2xl:h-128"
+        >
+          <img
+            src="assets/img/hero.png"
+            alt=""
+            class="object-contain h-72 sm:h-80 lg:h-[42rem] xl:h-112 2xl:h-128 sr03"
+          />
+        </div>
+        <div
+          class="absolute flex left-0 right-0 top-auto lg:top-0 lg:left-auto lg:-right-32 bottom-0 justify-center items-center gap-4 lg:rotate-90"
+        >
+          <span class="text-white text-sm font-semibold tracking-widest w-max">
+            Follow me
+          </span>
+          <span class="w-12 h-[3px] bg-[#647bff] rounded"></span>
+
+          <div class="flex gap-4">
+            <a
+              href="https://github.com/Nilupul96"
+              class="text-white hover:text-[#647bff] transition duration-100"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/nilupul-isurujith/"
+              class="text-white hover:text-[#647bff] transition duration-100"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!--::::::::::::::::::-About section-:::::::::::::::::-->
+    <section
+      class="bg-[#090a1a] p-6 mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28"
+      id="about"
+    >
+      <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          About
+          <span class="text-[#647bff]">US</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+          >
+            About
+          </span>
+        </h2>
+      </div>
 
+      <div class="max-w-7xl mt-4 relative mx-auto">
+        <div
+          class="flex w-full flex-col md:flex-row sm:justify-center items-center"
+        >
+          <div
+            class="w-[250px] md:w-[300px] flex justify-center items-center relative before:hidden before:md:block before:absolute md:before:w-[300px] md:before:h-[265px] before:border-dashed before:border-2 before:border-[#647bff] md:before:-left-7 md:before:top-7 before:rounded-[20px] before:z-[10]"
+          >
+            <img
+              class="rounded-xl object-cover z-20"
+              src="assets/img/about_me.jpg"
+            />
+          </div>
+          <div class="flex flex-col p-5 md:p-0 md:pl-16 md:w-[70%]">
+            <div class="text-white sr02">
+              <div
+                class="tab-titles justify-items-center items-center w-full md:flex md:w-auto md:order-1"
+              >
+                <a
+                  class="tab-links block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded active-link"
+                  onclick="openTab('bio')"
+                  >Bio</a
+                >
+                <p
+                  class="tab-links block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                  onclick="openTab('skills')"
+                >
+                  Skills
+                </p>
+                <p
+                  class="tab-links block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded"
+                  onclick="openTab('education')"
+                >
+                  Education
+                </p>
+              </div>
+              <div class="tab-content active-tab" id="bio">
+                <p class="leading-7 text-sm text-justify">
+                  I am a self-motivated and hard-working individual with a
+                  passion for exploring and working with new technologies. My
+                  primary focus is on mobile development, with a specialization
+                  in Flutter. I thrive on creating innovative and user-friendly
+                  mobile applications that solve real-world problems.<br /><br />
+                  With a strong foundation in Flutter, I bring a keen eye for
+                  detail and a commitment to delivering high-quality,
+                  performant, and scalable mobile solutions. My enthusiasm for
+                  mobile development drives me to continuously learn and stay
+                  updated with the latest trends and advancements in the
+                  field.<br /><br />
 
-  <!---scrollreveal--->
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <!---slider js--->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
-  <!---main js--->
-  <script src="assets/js/js.js"></script>
-</body>
+                  I am excited about the opportunity to bring my skills,
+                  creativity, and passion for mobile development to a dynamic
+                  team. I look forward to collaborating with like-minded
+                  professionals to build impactful and cutting-edge mobile
+                  applications that delight users and meet business objectives.
+                </p>
+              </div>
+              <div class="tab-content leading-7 text-sm" id="skills">
+                <ul>
+                  <li><span>Dart</span></li>
+                  <li><span>Flutter</span></li>
+                  <li><span>Firebase</span></li>
+                </ul>
+                <ul>
+                  <li>
+                    <span>Familiar with</span> <br />
+                    React Native
+                  </li>
+                  <li><span>Java</span></li>
+                  <li><span>HTML</span></li>
+                  <li><span>CSS</span></li>
+                </ul>
+              </div>
+              <div class="tab-content" id="education">
+                <p class="leading-7 text-sm">
+                  Bsc (Hons) In Computing And Information Systems <br />
+                  Sabaragamuwa University of Sri Lanka <br />
+                  (2017 - 2022)
+                </p>
+              </div>
+            </div>
+            <div class="flex justify-start mt-5 sr04">
+              <button
+                id="contactMe"
+                class="flex text-white border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base"
+              >
+                Contact Me
+              </button>
+              <button
+                onclick="scrollToContact()"
+                class="ml-3 md:ml-8 flex text-white bg-[#647bff] border border-[#647bff] w-28 h-14 md:w-32 justify-center items-center relative z-10 overflow-hidden hover:text-[#647bff] hover:border-none btn__hover focus:outline-none rounded-xl text-sm sm:text-base"
+              >
+                Hire Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!--:::::::::::::::::-Services section-::::::::::::::::-->
+    <section
+      class="bg-[#090a1a] p-6 mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden"
+      id="services"
+    >
+      <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          My
+          <span class="text-[#647bff]">Services</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+          >
+            Services
+          </span>
+        </h2>
+      </div>
+
+      <div class="max-w-7xl mt-4 relative mx-auto">
+        <div
+          class="max-w-xs md:max-w-[42rem] lg:max-w-[62rem] mx-auto grid grid-cols-1 pt-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6"
+        >
+          <div
+            class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-300 rounded-lg p-4 lg:p-8 sr02"
+          >
+            <div
+              class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8"
+            >
+              <img
+                src="assets/img/icon/S_01.png"
+                class="w-full h-full object-cover object-center p-5"
+              />
+            </div>
+
+            <div>
+              <h4
+                class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center"
+              >
+                Mobile app development
+              </h4>
+              <p class="text-white text-sm text-justify mt-4 mt:mb-8">
+                I specialize in developing high-performance, scalable, and
+                secure mobile applications tailored to your specific business
+                needs. Whether you need an app for iOS, Android, or both, I can
+                deliver a seamless and intuitive user experience.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center bg-[#111430] rounded-lg p-4 lg:p-8 sr03"
+          >
+            <div
+              class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8"
+            >
+              <img
+                src="assets/img/icon/S_02.png"
+                class="w-full h-full object-cover object-center p-5"
+              />
+            </div>
+
+            <div>
+              <h4 class="text-[#647bff] md:text-lg font-medium text-center">
+                Firebase Integration
+              </h4>
+              <p class="text-white text-sm text-justify mt-4 mt:mb-8">
+                Enhance your mobile applications with powerful and scalable
+                backend services through Firebase integration. I offer
+                comprehensive Firebase services that include real-time database
+                integration, user authentication, cloud storage, and push
+                notifications. I ensure your app is equipped with reliable and
+                efficient backend solutions, allowing you to focus on delivering
+                a seamless user experience.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center bg-transparent group hover:bg-[#111430] transition ease-in duration-300 rounded-lg p-4 lg:p-8 sr03"
+          >
+            <div
+              class="w-24 h-24 md:w-24 md:h-24 border-4 border-white border-dashed rounded-full overflow-hidden shadow-lg mb-2 md:mb-8"
+            >
+              <img
+                src="assets/img/icon/S_03.png"
+                class="w-full h-full object-cover object-center p-5"
+              />
+            </div>
+
+            <div>
+              <h4
+                class="group-hover:text-[#647bff] text-white transition ease-in duration-300 md:text-lg font-medium text-center"
+              >
+                Mobile App Deployment
+              </h4>
+              <p class="text-white text-sm text-justify mt-4 mt:mb-8">
+                Ensure your mobile applications reach your users with a smooth
+                and efficient deployment process. I offer comprehensive app
+                deployment services for both Android and iOS platforms. From
+                preparing your app for release to navigating the complexities of
+                app store guidelines, I handle every step to ensure a successful
+                launch..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--:::::::::::::::::-Projects section-::::::::::::::::-->
+    <section
+      class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden"
+      id="projects"
+    >
+      <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr06"
+        >
+          My
+          <span class="text-[#647bff]">Projects</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+          >
+            Projects
+          </span>
+        </h2>
+      </div>
+      <!-- project 1 -->
+      <div class="max-w-7xl mt-4 relative mx-auto">
+        <div
+          class="max-w-xs md:max-w-[42rem] lg:max-w-[62rem] mx-auto grid grid-cols-1 pt-6 justify-items-center md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6"
+        >
+          <div
+            class="relative project transition ease-in duration-300 rounded p-0 lg:p-0 sr02"
+          >
+            <img
+              src="assets/img/project/news4u.png"
+              class="w-full h-150 object-cover hover scalable"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-end justify-center text-center text-white p-4 project-overlay"
+            >
+              <div class="p-4">
+                <h1
+                  class="title-font text-base font-semibold text-white text-center mb-4"
+                >
+                  News4U - News App
+                </h1>
+                <p class="mb-3 text-white text-xs text-justify">
+                  A sleek and user-friendly news app that delivers the latest
+                  headlines and in-depth articles from multiple sources in
+                  real-time. The app features seamless reading experience with
+                  adjustable text sizes and dark mode. Users can save articles
+                  for offline reading and share their favorite stories on social
+                  media platforms. The app integrates with Rapid News API to
+                  ensure a diverse and up-to-date news collection.
+                </p>
+                <div class="p-2 w-full">
+                  <button
+                    onclick="openLink('https://github.com/Nilupul96/news_app')"
+                    class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base relative overflow-hidden z-10"
+                  >
+                    View on github
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div
+            class="relative project transition ease-in duration-300 rounded p-0 lg:p-0 sr02"
+          >
+            <img
+              src="assets/img/project/dateMe.png"
+              alt="Project 2"
+              class="w-full h-150 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center text-center text-white p-4 project-overlay"
+            >
+              <div class="p-4">
+                <h1
+                  class="title-font text-base font-semibold text-white text-center mb-4"
+                >
+                  Date Me
+                </h1>
+                <p class="mb-3 text-white text-xs text-justify">
+                  Date Me is a modern dating app designed to help individuals
+                  find meaningful connections and relationships. The app
+                  features a sleek and intuitive user interface and provide
+                  enjoyable dating experience. Users can create detailed
+                  profiles, swipe through potential matches and participate in
+                  interactive events to meet new people.
+                </p>
+                <div class="p-2 w-full">
+                  <button
+                    onclick="openLink('https://github.com/Nilupul96/date_me')"
+                    class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base relative overflow-hidden z-10"
+                  >
+                    View on github
+                  </button>
+                </div>
+                <div class="p-2 w-full">
+                  <button
+                    onclick="openLink('https://youtu.be/goHrO622Zco')"
+                    class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base relative overflow-hidden z-10"
+                    data-link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  >
+                    Watch Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div
+            class="relative project transition ease-in duration-300 rounded p-0 lg:p-0 sr02"
+          >
+            <img
+              src="assets/img/project/news4u.png"
+              alt="Project 2"
+              class="w-full h-150 object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center text-center text-white p-4 project-overlay"
+            >
+              <div class="p-4">
+                <h1
+                  class="title-font text-base font-semibold text-white text-center mb-4"
+                >
+                  News4U - News App
+                </h1>
+                <p class="mb-3 text-white text-xs text-justify">
+                  A sleek and user-friendly news app that delivers the latest
+                  headlines and in-depth articles from multiple sources in
+                  real-time. The app features personalized news feeds, push
+                  notifications for breaking news, and a seamless reading
+                  experience with adjustable text sizes and dark mode. Users can
+                  save articles for offline reading and share their favorite
+                  stories on social media platforms. The app integrates with
+                  various APIs to ensure a diverse and up-to-date news
+                  collection.
+                </p>
+                <div class="p-2 w-full">
+                  <button
+                    class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-8 focus:outline-none rounded-lg text-sm sm:text-base relative overflow-hidden z-10"
+                  >
+                    View on github
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--:::::::::::::::::-Contact section-::::::::::::::::-->
+    <section
+      class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden"
+      id="contact"
+    >
+      <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+        <h2
+          class="text-white font-bold select-none relative inline-block uppercase text-xl md:text-4xl z-10 sr01"
+        >
+          Contact
+          <span class="text-[#647bff]">Me</span>
+          <span
+            class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10"
+          >
+            Contact
+          </span>
+        </h2>
+      </div>
+
+      <div
+        class="max-w-md md:max-w-[50rem] px-4 sm:px-0 lg:w-1/2 md:w-2/3 mx-auto pt-10"
+      >
+        <form method="POST" id="form">
+          <div class="flex flex-wrap -m-2">
+            <input
+              type="hidden"
+              name="access_key"
+              value="eb2beb14-e1ce-47ef-a224-4ddc43327ad0"
+            />
+            <div class="p-2 w-full sr02">
+              <div class="relative">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name*"
+                  required
+                  class="w-full bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500 outline-none text-white py-4 px-6 sm:py-5 sm:px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full sr03">
+              <div class="relative">
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Email Address*"
+                  class="w-full bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500 outline-none text-white py-4 px-6 sm:py-5 sm:px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out"
+                />
+              </div>
+            </div>
+            <div class="p-2 w-full sr04">
+              <div class="relative">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Message*"
+                  required
+                  class="w-full h-52 bg-[#2d2d53] rounded-xl border border-[#2d2d53] focus:border-indigo-500 outline-none text-white py-5 px-8 placeholder-white text-base font-light transition-colors duration-200 ease-in-out"
+                ></textarea>
+              </div>
+            </div>
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <div class="p-2 w-full sr05">
+              <button
+              type="submit"
+                class="btn__hover flex mx-auto text-white hover:text-black bg-indigo-500 border-0 py-2 px-10 focus:outline-none rounded-lg text-lg relative overflow-hidden z-10"
+              >
+                Submit
+              </button>
+            </div>
+            <div 
+            class="title-font text-base font-semibold text-white text-center mb-4" id="result"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!---scrollreveal--->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!---slider js--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+    <!---main js--->
+    <script src="assets/js/js.js"></script>
+  </body>
 </html>

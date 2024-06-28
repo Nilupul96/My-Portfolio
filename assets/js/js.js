@@ -164,3 +164,66 @@ sr.reveal(`.sr06`, { delay: 300, origin: 'top' }),
         event.currentTarget.classList.add('active-link');
         document.getElementById(tabName).classList.add('active-tab');
     }
+    document.getElementById('contactMe').addEventListener('click', function() {
+        // Replace '1234567890' with the target phone number (with country code, without '+' sign)
+        var phoneNumber = '+94710380434';
+        var message = 'Hello! I am interested in hiring you. Please let me know the details.';
+  
+        // Encode the message to ensure it works correctly in the URL
+        var encodedMessage = encodeURIComponent(message);
+  
+        // Create the WhatsApp URL
+        var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=' + encodedMessage;
+
+        // Open the WhatsApp URL
+        window.open(whatsappUrl, '_blank');
+      });
+
+      function openLink(url) {
+        window.open(url, '_blank');
+    }
+
+    function scrollToContact() {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function(e) {
+    
+        e.preventDefault();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+        result.innerHTML = "Please wait..."
+        console.log(json);
+          fetch('https://api.web3forms.com/submit', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                      'Accept': 'application/json'
+                  },
+                  body: json
+              })
+              .then(async (response) => {
+                  let json = await response.json();
+                  if (response.status == 200) {
+                      result.innerHTML = "Form submitted successfully!";
+  
+                  } else {
+                      console.log(response);
+                      result.innerHTML = json.message;
+                  }
+              })
+              .catch(error => {
+                  console.log(error);
+                  result.innerHTML = "Something went wrong!";
+              })
+              .then(function() {
+                  form.reset();
+                  setTimeout(() => {
+                      result.style.display = "none";
+                  }, 3000);
+              });
+      });
